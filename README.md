@@ -1,1 +1,1 @@
-# squid-ssl-bump-and-cache-peer
+# Use ssl_bump and cache_peer in Squid
