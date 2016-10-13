@@ -1,0 +1,12 @@
+version: '2'
+services:
+  squid-child:
+    build: ./squid-child
+    container_name: squid-child
+    ports:
+     - "3128:3128"
+     - "3129:3129"
+
+  squid-parent:
+    build: ./squid-parent
+    container_name: squid-parent
