@@ -1,14 +1,12 @@
 version: '2'
 services:
-  squid-child:
-    build: ./squid-child
-    container_name: squid-child
+  squid-ssl-bump:
+    build: ./squid-ssl-bump
+    container_name: squid-ssl-bump
     ports:
      - "3128:3128"
      - "3129:3129"
-    links:
-     - squid-parent:squid-parent
 
-  squid-parent:
-    build: ./squid-parent
-    container_name: squid-parent
+  squid:
+    build: ./squid
+    container_name: squid
