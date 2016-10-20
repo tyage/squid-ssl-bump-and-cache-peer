@@ -11,4 +11,4 @@ COPY squid.conf /etc/squid/squid.conf
 
 CMD /sbin/squid && tail -10f /var/log/squid/access.log
 
-EXPOSE 3128
+EXPOSE 3128 3129
