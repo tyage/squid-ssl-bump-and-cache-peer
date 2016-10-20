@@ -2,7 +2,7 @@
 
 ## run SSL bumped squid server
 
-```sh
+```bash
 $ docker-compose up -d squid-ssl-bump
 $ curl https://example.com -x localhost:3128 -k
 ```
@@ -13,7 +13,7 @@ Using `squid-child` as a foreground squid proxy.
 
 ### Using squid parent:3128 (http_port)
 
-```sh
+```bash
 $ docker-compose up -d squid-child
 $ curl https://example.com -x localhost:3128 -k
 ```
@@ -59,7 +59,7 @@ When squid-child forward to parent's https port, then it returns following error
 
 When using openssl server as parent squid server, squid child send empty request.
 
-```sh
+```bash
 $ openssl s_server -cert /etc/squid/ssl/squid.pem -accept 3129
 Using default temp DH parameters
 Using default temp ECDH parameters
