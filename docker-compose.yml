@@ -7,6 +7,15 @@ services:
      - "3128:3128"
      - "3129:3129"
 
+  squid-child:
+    build: ./squid-child
+    container_name: squid-child
+    ports:
+     - "3128:3128"
+     - "3129:3129"
+    links:
+     - squid:squid
+
   squid:
     build: ./squid
     container_name: squid
