@@ -85,7 +85,5 @@ mitmproxy can bump https request and set upstream proxy!
 ```bash
 $ docker build -t squid .
 $ docker run -p 3128:3128 -t squid
-
-$ cd /tmp
 $ mitmproxy -U http://localhost:3128
 ```
