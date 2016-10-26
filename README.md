@@ -87,7 +87,5 @@ $ docker build -t squid .
 $ docker run -p 3128:3128 -t squid
 
 $ cd /tmp
-$ openssl req -new -newkey rsa:2048 -sha256 -days 3650 -nodes -x509 -keyout cert.pem -out cert.pem -subj '/CN=localhost/O=localhost/C=JP'
-$ openssl x509 -in cert.pem -outform DER -out cert.der
-$ mitmproxy --cert "*=cert.pem" -U http://localhost:3128
+$ mitmproxy -U http://localhost:3128
 ```
