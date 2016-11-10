@@ -1,5 +1,9 @@
 # Use ssl_bump and cache_peer in Squid
 
+This may disable function: http://bazaar.launchpad.net/~squid/squid/trunk/view/1493/src/FwdState.cc#L833
+
+refs
+
 ## run SSL bumped squid server
 
 ```bash
