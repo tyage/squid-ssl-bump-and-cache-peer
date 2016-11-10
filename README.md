@@ -1,8 +1,8 @@
 # Use ssl_bump and cache_peer in Squid
 
-This may disable function: http://bazaar.launchpad.net/~squid/squid/trunk/view/1493/src/FwdState.cc#L833
+This may disable function: http://bazaar.launchpad.net/~squid/squid/trunk/view/14932/src/FwdState.cc#L833
 
-refs
+refs: https://www.mydlp.com/using-parent-proxy-ssl-bump-enabled-squid-3-2/
 
 ## run SSL bumped squid server
 
